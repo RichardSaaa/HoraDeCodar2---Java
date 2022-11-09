@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Ex5 {
     public static void main (String[] args) {
         Scanner ler = new Scanner(System.in);
@@ -24,9 +22,14 @@ public class Ex5 {
             nota4 = ler.nextInt();
           
             media = ((nota1 + nota2 + nota3 + nota4) /4);
-            System.out.println("A média do aluno " + contAluno + " é " + media);
-        }
 
+            if(media > 6) {
+              System.out.println("Aluno aprovado, a média é: " + contAluno + " é " + media);
+            } else {
+              System.out.println("Aluno reprovado, a média é: " + contAluno + " é " + media);
+            }
+            
+        }
 
 
     }
